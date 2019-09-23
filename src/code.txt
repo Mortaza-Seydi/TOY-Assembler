@@ -1,0 +1,16 @@
+.ORG 30
+.DATA a 127
+.ORG 20
+.DATA b 21
+.DATA i 0
+.DATA ans 0
+.DATA one 1
+.DATA zero 0
+LDA ans
+ADC a
+STA ans
+LDA i
+ADC one
+STA i
+SBC b
+BNE zero
